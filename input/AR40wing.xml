@@ -1,0 +1,52 @@
+<daedalus>
+<aircraft name="AR40Wing" >
+    <reference>
+        <area>160</area>
+        <length>2</length>
+        <span>160</span>
+        <point>
+            <x>0.0</x>
+            <y>0.0</y>
+            <z>0.0</z>
+        </point>
+    </reference>
+	<wings>
+		<wing name="MainWing" symmetric="1">
+			<segment ID="1">
+				<location>
+					<x>0</x>
+					<y>0</y>
+					<z>0</z>
+				</location>
+				<dihedral> 0</dihedral>
+				<le_sweep> 0</le_sweep>
+				<span>80</span>
+				<root_chord>2</root_chord>
+				<tip_chord> 2 </tip_chord>
+				<root_twist> 0</root_twist>
+				<tip_twist>0</tip_twist>
+                <root_profile> NACA0012 </root_profile>
+                <tip_profile> NACA0012 </tip_profile>
+                <control_surface name="flap" location="trailing_edge" deflection="symmetric">
+                    <hingeline type="tapered"> 0.5 </hingeline>
+                    <starts>0</starts>
+                    <ends>1</ends>
+                </control_surface>	
+            </segment>
+		</wing>
+	</wings>
+	
+	<profiles>
+		<profile name="NACA0012">
+			<points>
+			 
+			</points>
+		</profile>
+		
+		<profile name="NLF416" FILE="airfoil/NLF416.DAT"></profile>
+	</profiles>
+	<weights>
+	
+	</weights>
+</aircraft>
+</daedalus>

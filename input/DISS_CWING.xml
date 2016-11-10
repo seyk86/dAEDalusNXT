@@ -1,0 +1,283 @@
+  <DAEDALUS>
+    <AIRCRAFT NAME="DISS_CWING">
+      <REFERENCE>
+        <AREA> 122.4</AREA>
+        <LENGTH> 4.2   </LENGTH>
+        <SPAN>    34    </SPAN>
+        <POINT>
+          <X>   4  </X>
+          <Y>  0.0       </Y>
+          <Z>   0.0</Z>
+        </POINT>
+      </REFERENCE>
+      <WINGS>
+        <WING NAME="MainWing" SYMMETRIC="1">
+          <SEGMENT ID="1">
+            <LOCATION>
+              <X>    1.5185   </X>
+              <Y>      0       </Y>
+              <Z>    0  </Z>
+            </LOCATION>
+            <DIHEDRAL> 0 </DIHEDRAL>
+            <LE_SWEEP>   0 </LE_SWEEP>
+            <SPAN>  1.86802    </SPAN>
+            <ROOT_CHORD>  6.07408     </ROOT_CHORD>
+            <TIP_CHORD>    6.07408     </TIP_CHORD>
+            <ROOT_TWIST> 0   </ROOT_TWIST>
+            <TIP_TWIST>   0  </TIP_TWIST>
+            <ROOT_PROFILE>NACA0012</ROOT_PROFILE>
+            <TIP_PROFILE> NACA0012    </TIP_PROFILE>
+            <wingbox type="StandardWingbox">
+					<root_frontspar> 0.1218 </root_frontspar>
+					<tip_frontspar> 0.1218 </tip_frontspar>
+					<root_rearspar> 0.624 </root_rearspar>
+					<tip_rearspar> 0.624 </tip_rearspar>
+					<is_fueled> 1 </is_fueled>
+					<material type="aluminum" > </material>
+				</wingbox>
+          </SEGMENT>
+          <SEGMENT ID="2">
+            <LOCATION>
+              <ATTACH_TO> previous  </ATTACH_TO>
+            </LOCATION>
+            <DIHEDRAL>  5.11   </DIHEDRAL>
+            <LE_SWEEP>  27.418   </LE_SWEEP>
+            <SPAN> 4.4657 </SPAN>
+            <ROOT_CHORD> 6.07408      </ROOT_CHORD>
+            <TIP_CHORD>3.7575 </TIP_CHORD>
+            <ROOT_TWIST> 3.66  </ROOT_TWIST>
+            <TIP_TWIST> 1.2   </TIP_TWIST>
+            <ROOT_PROFILE>  SC20414    </ROOT_PROFILE>
+            <TIP_PROFILE> SC20414 </TIP_PROFILE>
+            <wingbox type="StandardWingbox">
+					<root_frontspar> 0.1218 </root_frontspar>
+					<tip_frontspar> 0.157 </tip_frontspar>
+					<root_rearspar> 0.624 </root_rearspar>
+					<tip_rearspar> 0.653  </tip_rearspar>
+					<is_fueled> 1 </is_fueled>
+					<material type="aluminum" > </material>
+			</wingbox>
+          </SEGMENT>
+          <SEGMENT ID="3">
+            <LOCATION>
+              <ATTACH_TO> previous    </ATTACH_TO>
+            </LOCATION>
+            <DIHEDRAL> 5.11  </DIHEDRAL>
+            <LE_SWEEP> 27.418  </LE_SWEEP>
+            <SPAN> 10.6228    </SPAN>
+            <ROOT_CHORD> 3.7575  </ROOT_CHORD>
+            <TIP_CHORD> 2.2  </TIP_CHORD>
+            <ROOT_TWIST> 1.2 </ROOT_TWIST>
+            <TIP_TWIST>  -1.9  </TIP_TWIST>
+            <ROOT_PROFILE> SC20414  </ROOT_PROFILE>
+            <TIP_PROFILE> SC20414    </TIP_PROFILE>
+            <CONTROL_SURFACE NAME="aileron" LOCATION="trailing_edge" DEFLECTION="asymmetric">
+              <HINGELINE TYPE="tapered">  0.24    </HINGELINE>
+              <STARTS>   0.6621</STARTS>
+              <ENDS>0.8680</ENDS>
+            </CONTROL_SURFACE>
+            <wingbox type="StandardWingbox">
+					<root_frontspar> 0.157 </root_frontspar>
+					<tip_frontspar> 0.2066  </tip_frontspar>
+					<root_rearspar> 0.653  </root_rearspar>
+					<tip_rearspar> 0.7054 </tip_rearspar>
+					<is_fueled> 1 </is_fueled>
+					<material type="aluminum" > </material>
+			</wingbox>  
+          </SEGMENT> 
+          <SEGMENT ID="4">
+            <LOCATION>
+              <ATTACH_TO>  previous </ATTACH_TO>
+            </LOCATION>
+            <DIHEDRAL> 90.5 </DIHEDRAL>
+            <LE_SWEEP>40</LE_SWEEP>
+            <SPAN>3.7</SPAN>
+            <ROOT_CHORD>2.2  </ROOT_CHORD>
+            <TIP_CHORD>  1.9 </TIP_CHORD>
+            <ROOT_TWIST>4.9</ROOT_TWIST>
+            <TIP_TWIST>3.5 </TIP_TWIST>
+            <ROOT_PROFILE> NACA0012 </ROOT_PROFILE>
+            <TIP_PROFILE> NACA0012 </TIP_PROFILE>
+                            <wingbox type="StandardWingbox">
+					<root_frontspar> 0.2066 </root_frontspar>
+					<tip_frontspar> 0.2066  </tip_frontspar>
+					<root_rearspar> 0.7054  </root_rearspar>
+					<tip_rearspar> 0.7054 </tip_rearspar>
+					<is_fueled> 0 </is_fueled>
+					<material type="aluminum" > </material>
+				</wingbox>
+            
+          </SEGMENT>
+          <SEGMENT ID="5">
+            <LOCATION>
+              <ATTACH_TO>  previous   </ATTACH_TO>
+            </LOCATION>
+            <DIHEDRAL> 173 </DIHEDRAL>
+            <LE_SWEEP> 30 </LE_SWEEP>
+            <SPAN> 4.5</SPAN>
+            <ROOT_CHORD> 1.9</ROOT_CHORD>
+            <TIP_CHORD> 1.7</TIP_CHORD>
+            <ROOT_TWIST>3.2</ROOT_TWIST>
+            <TIP_TWIST> 4.2 </TIP_TWIST>
+            <ROOT_PROFILE>  NACA0012</ROOT_PROFILE>
+            <TIP_PROFILE> NACA0012 </TIP_PROFILE>
+            <CONTROL_SURFACE NAME="elevon" LOCATION="trailing_edge" DEFLECTION="asymmetric">
+              <HINGELINE TYPE="tapered"> 0.95     </HINGELINE>
+              <STARTS> 0.1  </STARTS>
+              <ENDS>   1 </ENDS>
+            </CONTROL_SURFACE>
+            <wingbox type="StandardWingbox">
+					<root_frontspar> 0.2066 </root_frontspar>
+					<tip_frontspar> 0.2066  </tip_frontspar>
+					<root_rearspar> 0.7054   </root_rearspar>
+					<tip_rearspar> 0.7054 </tip_rearspar>
+					<is_fueled> 0 </is_fueled>
+					<material type="aluminum" > </material>
+			</wingbox>
+          </SEGMENT>
+        </WING>
+        <WING NAME="VerticalTail" SYMMETRIC="0">
+          <SEGMENT ID="1">
+            <LOCATION>
+              <X>18.2850 </X>
+              <Y> 0  </Y>
+              <Z> 2 </Z>
+            </LOCATION>
+            <DIHEDRAL> 90  </DIHEDRAL>
+            <LE_SWEEP>40 </LE_SWEEP>
+            <SPAN> 5.12  </SPAN>
+            <ROOT_CHORD> 4.87  </ROOT_CHORD>
+            <TIP_CHORD>  1.9567  </TIP_CHORD>
+            <ROOT_TWIST> 0  </ROOT_TWIST>
+            <TIP_TWIST>  0 </TIP_TWIST>
+            <ROOT_PROFILE>  NACA0012  </ROOT_PROFILE>
+            <TIP_PROFILE> NACA0012      </TIP_PROFILE>
+            <CONTROL_SURFACE NAME="rudder" LOCATION="trailing_edge">
+              <HINGELINE TYPE="tapered"> 0.3 </HINGELINE>
+              <STARTS>0.2</STARTS>
+              <ENDS> 1</ENDS>
+            </CONTROL_SURFACE>
+            <wingbox type="StandardWingbox">
+					<root_frontspar> 0.15 </root_frontspar>
+					<tip_frontspar> 0.15 </tip_frontspar>
+					<root_rearspar> 0.7 </root_rearspar>
+					<tip_rearspar> 0.7 </tip_rearspar>
+					<is_fueled> 0 </is_fueled>
+					<material type="aluminum" > </material>
+			</wingbox>
+          </SEGMENT>
+        </WING>
+      </WINGS>
+<fuselages>
+		<fuselage name="Fuselage">
+			<segment name="Nose">
+				<location>
+					<x>-13.0878</x>
+					<y>0</y>
+					<z>0.3821</z>
+				</location>
+				<length>5.07</length>
+				<front_width>0.0985</front_width>
+				<rear_width>1.97</rear_width>
+				<front_height>0.1035</front_height>
+				<rear_height>2.07</rear_height>
+				<sweep>-7</sweep>
+			</segment>
+			<segment name="Cabin">
+				<location>
+					<attach_to> previous </attach_to>
+				</location>
+				<length>19.23</length>
+				<front_width>1.97</front_width>
+				<rear_width>1.97</rear_width>
+				<front_height>2.07</front_height>
+				<rear_height>2.07</rear_height>
+				<sweep>0</sweep>
+			</segment>
+			<segment name="Tail">
+				<location>
+					<attach_to> previous </attach_to>
+				</location>
+				<length>12.7</length>
+				<front_width>1.97</front_width>
+				<rear_width>0.6</rear_width>
+				<front_height>2.07</front_height>
+				<rear_height>0.63</rear_height>
+				<sweep>-3</sweep>
+			</segment>
+		</fuselage>
+	</fuselages>
+     <engines>
+		<engine name="left" mounting="MainWing">
+			<cg_pos> 
+				<x> 1.3  </x>
+				<y> -5.75 </y>
+				<z> 0 </z>
+			</cg_pos>
+			<mass_engine> 2384 </mass_engine>
+			<mass_pylon>  1000  </mass_pylon>
+			<max_thrust>  118000 </max_thrust>
+		</engine>
+		<engine name="right" mounting="MainWing">
+			<cg_pos> 
+				<x> 1.3  </x>
+				<y> 5.75 </y>
+				<z> 0 </z>
+			</cg_pos>
+			<mass_engine> 2384 </mass_engine>
+			<mass_pylon>  1000 </mass_pylon>
+			<max_thrust>  118000 </max_thrust>
+		</engine>
+	</engines>
+    <control>
+        <control_allocation>
+            <trim_surface name="elevon"> </trim_surface>
+            <pitch_cmd name="elevon">  </pitch_cmd>
+            <roll_cmd name="aileron">  </roll_cmd>
+            <yaw_cmd name="rudder">  </yaw_cmd> 
+        </control_allocation>
+    </control>
+	<weights>
+		<general_weights>
+			<MTOW unit="kg"> 73530 </MTOW>
+			<MZFW unit="kg"> 60500 </MZFW>
+			<MLW unit="kg">  64500 </MLW>
+			<OWE unit="kg"> 39733 </OWE>
+		</general_weights>
+		<wing_weights>
+			<wing_weight name="MainWing">
+				<SystemsEstimate>2460</SystemsEstimate>
+				<SkinEstimate> 2000</SkinEstimate>
+			</wing_weight>
+           <wing_weight name="VerticalTail">
+				<SystemsEstimate>10</SystemsEstimate>
+				<SkinEstimate> 10</SkinEstimate>
+			</wing_weight>
+		</wing_weights>
+		<fuselage_weights>
+			<fuselage_weight name="Fuselage">
+				<NonStructuralEstimate> 18000</NonStructuralEstimate>
+				<SystemsEstimate> 15000</SystemsEstimate>
+				<NumberPAX> 180</NumberPAX>
+			</fuselage_weight>
+		</fuselage_weights>
+	</weights>
+	<boundary_conditions>
+		<connection>
+			<beam name="MainWing"> </beam>
+			<beam name="Fuselage"> </beam>
+		</connection>
+        <connection>
+			<beam name="VerticalTail"> </beam>
+			<beam name="Fuselage"> </beam>
+		</connection>
+		<restraining>
+			<beam name="Fuselage">
+				<x> 25 </x>
+				<y>	0</y>
+				<z>	0</z>
+			</beam>
+		</restraining>
+	</boundary_conditions>
+    </AIRCRAFT>
+  </DAEDALUS>
