@@ -1,0 +1,26 @@
+function [ area ] = planar_polygon_area(polygon )
+%UNTITLED Summary of this function goes here
+%   Detailed explanation goes here
+
+area=0;
+coord=3;
+
+% TODO for 3D
+n=cross(polygon(:,1)-polygon(:,end-1),polygon(:,2)-polygon(:,3));
+if (sum(n)<=1E-10) && (sum(n)>=-1E-10)
+    area=0;
+else
+    n=n/norm(n);
+    area=polyarea(polygon(1,:),polygon(2,:));
+    if isinf(area)
+        area=0;
+    else
+        if abs(n(3))>1e-15 
+            area=area/n(3);
+        else
+            area=0;
+        end
+    end
+end
+end
+
